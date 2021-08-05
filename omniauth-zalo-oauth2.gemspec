@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/omniauth/zalo/oauth2/version"
+require_relative "lib/omniauth/zalo-oauth2/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "omniauth-zalo-oauth2"
@@ -29,5 +29,5 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  # spec.add_dependency "example-gem", "~> 1.0"
+  s.add_runtime_dependency "omniauth-oauth2", "~> 1.7"
 end
